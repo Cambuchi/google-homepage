@@ -11,6 +11,8 @@ body {
     height: 100%;
 }
 
+/*NAVBAR CSS*/
+
 #nav-container {
     display: flex;
     flex-shrink: 0;
@@ -62,5 +64,81 @@ a:hover, a:active {
 
 #nav-r-text {
     display: flex;
-    padding: 0px 15px 0px 15px;
+    padding: 0 8px 0 8px;
+}
+
+.services-link {
+    padding: 0 8px 0 8px;
+    color: inherit;
+    font-size: 13px;
+}
+
+#nav-r-menu {
+    display: flex;
+    float: right;
+    position: relative;
+    line-height: normal;
+    white-space: nowrap;
+    align-items: center;
+}
+
+#apps-button-container {
+    display: inline-block;
+    padding: 4px;
+    vertical-align: middle;
+}
+
+#apps-button {
+    cursor: pointer;
+    text-decoration: none;
+    opacity: 1;
+    padding: 8px;
+    outline: none;
+    vertical-align: middle;
+    border-radius: 2px;
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+}
+
+#apps-button:hover, #apps-button:active {
+    background-color: rgba(60,64,67,0.08);
+    outline: none;
+    border-radius: 50%;
+}
+
+.dots {
+    color: #5f6368;
+    fill: currentColor;
+    cursor: pointer;
+}
+
+#sign-in {
+    display: inline;
+    vertical-align: middle;
+}
+
+#sign-in-button {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-decoration: none;
+    background: #1a73e8;
+    border: 1px solid transparent;
+    font-weight: 550;
+    font-size: 14px;
+    letter-spacing: 0.25px;
+    line-height: 16px;
+    min-width: 96px;
+    padding: 9px 23px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 4px;
+    outline: none;
+    margin: 0 8px;
+}
+
+#sign-in-button:hover, #sign-in-button:active {
+    background: #2b7de9;
+    -moz-box-shadow: 0 1px 2px 0 rgba(66,133,244,0.3),0 1px 3px 1px rgba(66,133,244,0.15);
+    box-shadow: 0 1px 2px 0 rgba(66,133,244,0.3),0 1px 3px 1px rgba(66,133,244,0.15);
 }
