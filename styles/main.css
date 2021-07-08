@@ -13,8 +13,54 @@ body {
 
 #nav-container {
     display: flex;
+    flex-shrink: 0;
     align-items: center;
     padding: 6px;
     height: 60px;
-    
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    text-decoration: underline;
+}
+
+#nav-container:first-child {
+    margin-left: 15px;
+}
+
+.nav-link {
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+    color: #222;
+}
+
+#services {
+    display: inline-block;
+    flex-grow: 1;
+    transition: box-shadow 250ms;
+}
+
+#services-container {
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+    align-items: center;
+    float: right;
+    padding: 4px 4px 4px 32px;
+    height: 48px;
+    line-height: normal;
+}
+
+#nav-r-app-list {
+    visibility: hidden;
+    display: none;
+}
+
+#nav-r-text {
+    display: flex;
+    padding: 0px 15px 0px 15px;
 }
