@@ -14,6 +14,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
+    min-width: 400px;
 }
 
 /*NAVBAR CSS*/
@@ -156,7 +157,7 @@ a:hover, a:active {
     min-height: 92px;
     max-height: 290px;
     height: calc(100% - 560px);
-    min-width: 400px;
+
 }
 
 #logo-container {
@@ -180,7 +181,7 @@ a:hover, a:active {
 
 /*SEARCH FUNCTIONS CSS*/
 #search-wrapper {
-    padding: 20px;
+    flex-grow: 0;
 }
 
 #search-container {
@@ -194,7 +195,7 @@ a:hover, a:active {
 form {
     max-height: 160px;
     padding: 20px;
-    min-width: 360px;
+
 }
 
 #search-outline {
@@ -379,3 +380,51 @@ button:focus {
 }
 
 /*BOTTOM WRAPPER CSS*/
+#bottom-wrapper {
+    flex-grow: 1;
+    min-height: 0;
+}
+
+/*FOOTER CSS*/
+#footer-wrapper {
+    background: #f2f2f2;
+    flex-shrink: 0;
+
+}
+
+#footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+#footer-right {
+    display: flex;
+    justify-content: flex-start;
+    min-width: 30%;
+    order: 1;
+}
+
+#footer-left {
+    display: flex;
+    justify-content: flex-end;
+    min-width: 30%;
+    order: 2;
+}
+
+.footer-link {
+    color: #70757a;
+    display: flex;
+    padding: 15px 15px;
+    white-space: nowrap;
+    text-decoration: none;
+
+}
+
+@media screen and (max-width: 600px) {
+    #footer-container {
+        justify-content: center;
+    }
+}
+
